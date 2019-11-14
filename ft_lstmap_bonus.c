@@ -6,11 +6,11 @@
 /*   By: jpagacz <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/29 16:19:24 by jpagacz           #+#    #+#             */
-/*   Updated: 2019/11/14 10:59:03 by jpagacz          ###   ########.fr       */
+/*   Updated: 2019/11/14 13:09:41 by jpagacz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include "libft.h"
 
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {

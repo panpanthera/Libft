@@ -6,7 +6,7 @@
 /*   By: jpagacz <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/28 17:00:33 by jpagacz           #+#    #+#             */
-/*   Updated: 2019/11/09 17:56:00 by jpagacz          ###   ########.fr       */
+/*   Updated: 2019/11/14 13:10:46 by jpagacz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,19 +14,17 @@
 
 void	ft_lstadd_back(t_list **alst, t_list *new)
 {
-	t_list *temp;
+	t_list *tmp;
 
-	if (!alst || !new)
-		return ;
-	if (!*alst)
+	if (*alst == NULL)
 	{
 		*alst = new;
 		new->next = NULL;
 	}
 	else
 	{
-		temp = ft_lstlast(*alst);
-		temp->next = new;
+		tmp = ft_lstlast(*alst);
+		tmp->next = new;
 		new->next = NULL;
 	}
 }

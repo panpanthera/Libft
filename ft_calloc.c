@@ -6,7 +6,7 @@
 /*   By: jpagacz <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/10 12:46:29 by jpagacz           #+#    #+#             */
-/*   Updated: 2019/11/12 11:14:16 by jpagacz          ###   ########.fr       */
+/*   Updated: 2019/11/14 12:47:30 by jpagacz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,10 @@
 
 void	*ft_calloc(size_t count, size_t size)
 {
-	char	*ptr;
+	char	*calloc;
 
-	if (!(ptr = malloc(count * size)))
+	if (!(calloc = malloc(count * size)))
 		return (NULL);
-	ft_bzero(ptr, count * size);
-	return (ptr);
+	ft_bzero(calloc, count * size);
+	return (calloc);
 }
