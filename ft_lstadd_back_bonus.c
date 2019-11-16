@@ -6,7 +6,7 @@
 /*   By: jpagacz <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/28 17:00:33 by jpagacz           #+#    #+#             */
-/*   Updated: 2019/11/14 13:10:46 by jpagacz          ###   ########.fr       */
+/*   Updated: 2019/11/16 17:26:06 by jpagacz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,9 @@ void	ft_lstadd_back(t_list **alst, t_list *new)
 {
 	t_list *tmp;
 
-	if (*alst == NULL)
+	if (!alst)
+		return ;
+	if (!*alst)
 	{
 		*alst = new;
 		new->next = NULL;

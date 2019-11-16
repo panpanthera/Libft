@@ -6,7 +6,7 @@
 /*   By: jpagacz <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/08 17:03:18 by jpagacz           #+#    #+#             */
-/*   Updated: 2019/11/09 18:15:15 by jpagacz          ###   ########.fr       */
+/*   Updated: 2019/11/16 14:34:12 by jpagacz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,7 @@ char	*ft_strrchr(const char *s, int c)
 	int		size;
 
 	last = 0;
-	size = ft_strlen(s) + 1;
-	if (!s)
-		return (NULL);
+	size = ft_strlen(s);
 	while (size > 0)
 	{
 		if (*s == c)
@@ -28,5 +26,7 @@ char	*ft_strrchr(const char *s, int c)
 		s++;
 		size--;
 	}
+	if (c == 0)
+		return ((char *)s);
 	return (last);
 }

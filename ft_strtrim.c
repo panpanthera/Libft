@@ -6,7 +6,7 @@
 /*   By: jpagacz <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/15 13:43:03 by jpagacz           #+#    #+#             */
-/*   Updated: 2019/11/13 11:58:27 by jpagacz          ###   ########.fr       */
+/*   Updated: 2019/11/16 14:41:12 by jpagacz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -72,7 +72,7 @@ char		*ft_strtrim(char const *s1, char const *set)
 	{
 		rval = 0;
 		len = ft_strlen(s1);
-		start = ft_start(s1, set);	
+		start = ft_start(s1, set);
 		end = ft_end(s1, set, len - 1);
 		count = start + end;
 		if (len - start <= 0)
