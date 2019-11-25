@@ -6,7 +6,7 @@
 /*   By: jpagacz <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/23 11:46:22 by jpagacz           #+#    #+#             */
-/*   Updated: 2019/11/09 16:52:33 by jpagacz          ###   ########.fr       */
+/*   Updated: 2019/11/18 16:53:56 by jpagacz          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ static int	ft_nblen(int n)
 	return (ft_nblen(n) + 1);
 }
 
-char		*ft_fill_itoa(char *rval, int n, int size)
+static char		*ft_fill_itoa(char *rval, int n, int size)
 {
 	rval[--size] = '\0';
 	if (n >= 0)
